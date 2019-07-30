@@ -2,9 +2,12 @@ header {
     text-align: center;
     position: relative;
     margin: 50px;
-    font-size: 50pt;
     color: white;
-    font-family: Haettenschweiler, sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 
@@ -28,9 +31,9 @@ header {
 #option {
     position: relative;
     text-align: center;
-    font-size: 30pt;
+    font-size: 20pt;
     color: white;
-    font-family: Haettenschweiler, sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 button {
@@ -51,13 +54,13 @@ body #myVideo {
     position: fixed;
     display: flex;
     align-content: center;
-    right: .5;
-    bottom: 5;
+    right: 0;
+    bottom: 0;
     min-width: 100%; 
     min-height: 100%;
     margin-left: 0px;
   }
 
   body {
-      background-image: url(../assets/space.jpeg)
+      background-image: url(../assets/space.jpeg);
   }
