@@ -1,0 +1,63 @@
+header {
+    text-align: center;
+    position: relative;
+    margin: 50px;
+    font-size: 50pt;
+    color: white;
+    font-family: Haettenschweiler, sans-serif;
+}
+
+
+.flex-box {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.image {
+    background-color: white;
+    border: solid transparent;
+    width: 200px;
+    border-width: 16px;
+    border-radius: 5%;
+
+}
+
+#option {
+    position: relative;
+    text-align: center;
+    font-size: 30pt;
+    color: white;
+    font-family: Haettenschweiler, sans-serif;
+}
+
+button {
+    border: transparent;
+}
+
+button:hover {
+    box-shadow: 1px 2px 80px greenyellow;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body #myVideo {
+    position: fixed;
+    display: flex;
+    align-content: center;
+    right: .5;
+    bottom: 5;
+    min-width: 100%; 
+    min-height: 100%;
+    margin-left: 0px;
+  }
+
+  body {
+      background-image: url(../assets/space.jpeg)
+  }
