@@ -11,19 +11,3 @@ test('Generates three products', assert => {
     assert.equal(expected.length, 3);
     assert.notDeepEqual(expected[0], expected[1]);
 });
-
-// test('Gets random product', assert => {
-//     //arrange
-
-//     //act 
-
-//     //assert
-// });
-
-// test('Removes product from list', assert => {
-//     //arrange
-
-//     //act 
-
-//     //assert
-// });
