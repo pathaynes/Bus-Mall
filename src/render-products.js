@@ -5,6 +5,7 @@ function renderProducts(products) {
     img.className = 'image';
     img.src = products.image;
     button.appendChild(img);
+    img.alt = products.id;
     
     return button;
 }
