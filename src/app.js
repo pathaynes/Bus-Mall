@@ -11,7 +11,6 @@ const threeProducts = threeRandom(masterProducts.list);
 const button = document.getElementById('buttons');
 const countSpan = document.getElementById('count-span');
 let count = 0;
-countSpan.textContent = count;
 
 for(let i = 0; i < threeProducts.length; i++) {
     const product = threeProducts[i];
@@ -24,11 +23,11 @@ button.addEventListener('click', event => {
     count++;
     countSpan.textContent = count;
     // if(count === 25) {
-
-    // };
+    //     return;
+    // }
     while(button.firstChild) {
         button.removeChild(button.firstChild);
-    }
+    } 
     const threeNew = threeRandom(masterProducts.list);
     for(let i = 0; i < threeNew.length; i++) {
         const product = threeNew[i];
