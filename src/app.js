@@ -23,9 +23,9 @@ button.addEventListener('click', event => {
     store.countClick(event.target.alt);
     count++;
     countSpan.textContent = count;
-    if(count === 25) {
+    // if(count === 25) {
 
-    };
+    // };
     while(button.firstChild) {
         button.removeChild(button.firstChild);
     }
