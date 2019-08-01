@@ -9,7 +9,9 @@ import store from './data/store.js';
 const masterProducts = new ProductShuffle(productsData);
 const threeProducts = threeRandom(masterProducts.list);
 const button = document.getElementById('buttons');
-
+const countSpan = document.getElementById('count-span');
+let count = 0;
+countSpan.textContent = count;
 
 for(let i = 0; i < threeProducts.length; i++) {
     const product = threeProducts[i];
@@ -19,6 +21,11 @@ for(let i = 0; i < threeProducts.length; i++) {
 
 button.addEventListener('click', event => {
     store.countClick(event.target.alt);
+    count++;
+    countSpan.textContent = count;
+    if(count === 25) {
+
+    };
     while(button.firstChild) {
         button.removeChild(button.firstChild);
     }
