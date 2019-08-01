@@ -18,6 +18,7 @@ for(let i = 0; i < threeProducts.length; i++) {
 
 button.addEventListener('click', event => {
     store.countClick(event.target.alt);
+    location.reload();
 });
 //user selects option
 //button clicked generates three new options

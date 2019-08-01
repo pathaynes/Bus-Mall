@@ -10,14 +10,14 @@ const count = {
     dragon: 0,
     monster: 0,
     pen: 0,
-    petSweep: 0,
+    ['pet-sweep']: 0,
     r2d2: 0,
     scissors: 0,
     shark: 0,
     tauntaun: 0,
     unicorn: 0,
-    waterCan: 0,
-    wineGlass: 0,
+    ['water-can']: 0,
+    ['wine-glass']: 0,
     sweep: 0
 };
 
