@@ -1,14 +1,13 @@
 import threeRandom from './random.js';
 import store from './data/store.js';
 
-class productShuffle {
+class ProductShuffle {
     constructor(products) {
         this.list = products.slice();
     }
     
     getRandomProducts() {
         const newProducts = store.getProducts();
-        
         const threeRad = threeRandom(newProducts);
         
         return threeRad;
@@ -28,4 +27,4 @@ class productShuffle {
         return this.list.length > 0;
     }
 }
-export default productShuffle;
+export default ProductShuffle;

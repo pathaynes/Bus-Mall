@@ -1,4 +1,5 @@
 import productsData from './products.js';
+import count from './count.js';
 
 const PRODUCTS_KEY = 'PRODUCTS';
 
@@ -20,7 +21,15 @@ const store = {
             products = productsData;
         }
         return products;
+    },
+    countClick(id) {
+        const localCount = store.get('count');
+        if(!localCount) store.save('count', count);
+        localCount[id]++;
+        store.save('count', localCount);
+        console.log(localCount);
     }
+
 };
 
 export default store;
