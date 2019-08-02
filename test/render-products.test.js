@@ -1,4 +1,3 @@
-// import productsData from '../src/data/products.js';
 import renderProducts from '../src/render-products.js';
 
 const test = QUnit.test;
@@ -19,5 +18,4 @@ test('Render-product', assert => {
     const html = dom.outerHTML;
 
     assert.equal(html, expected);
-
 });

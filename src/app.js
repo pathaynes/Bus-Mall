@@ -9,13 +9,11 @@ const button = document.getElementById('buttons');
 const countSpan = document.getElementById('count-span');
 const buttonContainer = document.getElementById('button-container');
 let count = 0;
-
-
-
 let previousArray = [];
 
 for(let i = 0; i < 3; i++) {
     const product = randomItem(masterProducts.list);
+    store.countView(product.id);
     const dom = renderProducts(product);
     button.appendChild(dom);
 }
@@ -27,10 +25,12 @@ button.addEventListener('click', event => {
     while(button.firstChild) {
         button.removeChild(button.firstChild);
     } 
-  
+    
     let currentArray = [];
     while(currentArray.length < 3) {
         const product = randomItem(masterProducts.list);
+        console.log(product);
+        store.countView(product.id);
         if(!currentArray.includes(product) && !previousArray.includes(product)) {
             currentArray.push(product);
         }
