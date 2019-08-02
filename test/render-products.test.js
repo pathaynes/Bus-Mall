@@ -13,7 +13,6 @@ test('Render-product', assert => {
             image: 'assets/usb.gif'
         };
    
-
     const expected = '<button><img class="image" src="assets/usb.gif"></button>';
 
     const dom = renderProducts(products);

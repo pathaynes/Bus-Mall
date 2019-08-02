@@ -1,5 +1,6 @@
 import productsData from './products.js';
 import count from './count.js';
+import view from './view.js';
 
 const PRODUCTS_KEY = 'PRODUCTS';
 
@@ -27,9 +28,13 @@ const store = {
         if(!localCount) store.save('count', count);
         localCount[id]++;
         store.save('count', localCount);
-        console.log(localCount);
+    },
+    countView(id) {
+        const localView = store.get('view');
+        if(!localView) store.save('view', view);
+        localView[id]++;
+        store.save('view', localView);
     }
-
 };
 
 export default store;
