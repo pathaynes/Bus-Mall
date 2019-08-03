@@ -29,7 +29,6 @@ button.addEventListener('click', event => {
     let currentArray = [];
     while(currentArray.length < 3) {
         const product = randomItem(masterProducts.list);
-        console.log(product);
         store.countView(product.id);
         if(!currentArray.includes(product) && !previousArray.includes(product)) {
             currentArray.push(product);

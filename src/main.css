@@ -76,3 +76,12 @@ p {
   .hidden {
       display: none;
   }
+
+a {
+      color:white;
+      position: relative;
+  }
+
+  nav {
+      text-align: center;
+  }
