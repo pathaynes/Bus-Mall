@@ -41,20 +41,10 @@ const store = {
         const clickGraph = store.get(COUNT_RESULTS);
         return clickGraph || [];
     },
-    addCountClick(results) {
-        const countResults = store.getCountClick();
-        countResults.push(results);
-        store.save(COUNT_RESULTS, countResults);
-    },
     getCountViews() {
         const viewGraph = store.get(VIEWS_RESULTS);
         return viewGraph || [];
     },
-    addCountViews(results) {
-        const viewResults = store.getCountViews();
-        viewResults.push(results);
-        store.save(VIEWS_RESULTS, viewResults);
-    }
 };
 
 export default store;
