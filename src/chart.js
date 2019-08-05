@@ -10,7 +10,6 @@ const countTable = Object.values(counts);
 const viewTable = Object.keys(counts);
 const displayData = [];
 
-console.log(viewTable, countTable);
 
 for(let i = 0; i < viewTable.length; i++) {
     const label = viewTable[i];
@@ -20,7 +19,7 @@ for(let i = 0; i < viewTable.length; i++) {
         viewTable.splice(i, 1);
     }
 }
-console.log(viewTable);
+
 for(let i = 0; i < viewsArray.length; i++) {
     const view = viewsArray[i];
     const display = view.display;
