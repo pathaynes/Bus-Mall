@@ -9,7 +9,7 @@ class ProductShuffle {
     getRandomProducts() {
         const newProducts = store.getProducts();
         const threeRad = randomItem(newProducts);
-        
+        console.log(threeRad);
         return threeRad;
     }
     
