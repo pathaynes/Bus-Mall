@@ -1,4 +1,4 @@
-import threeRandom from './random.js';
+import randomItem from './random.js';
 import store from './data/store.js';
 
 class ProductShuffle {
@@ -8,8 +8,8 @@ class ProductShuffle {
     
     getRandomProducts() {
         const newProducts = store.getProducts();
-        const threeRad = threeRandom(newProducts);
-        
+        const threeRad = randomItem(newProducts);
+        console.log(threeRad);
         return threeRad;
     }
     

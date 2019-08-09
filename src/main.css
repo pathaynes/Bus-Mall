@@ -11,7 +11,6 @@ h1 {
     font-family: 'Press Start 2P', cursive;
 }
 
-
 #buttons {
     display: flex;
     position: relative;
@@ -64,12 +63,25 @@ body #myVideo {
   }
 
   body {
-      background-image: url(../assets/space.jpeg);
+    background-image: url(../assets/space.jpeg);
   }
 
 p {
-      text-align: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .hidden {
+      display: none;
+  }
+
+a {
+      color:white;
       position: relative;
-      color: white;
-      font-family: 'Press Start 2P', cursive;
+  }
+
+  nav {
+      text-align: center;
   }

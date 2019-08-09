@@ -1,7 +1,10 @@
 import productsData from './products.js';
 import count from './count.js';
+import view from './view.js';
 
 const PRODUCTS_KEY = 'PRODUCTS';
+const COUNT_RESULTS = 'count';
+const VIEWS_RESULTS = 'view';
 
 const store = {
     storage: window.localStorage,
@@ -27,9 +30,21 @@ const store = {
         if(!localCount) store.save('count', count);
         localCount[id]++;
         store.save('count', localCount);
-        console.log(localCount);
-    }
-
+    },
+    countView(id) {
+        const localView = store.get('view');
+        if(!localView) store.save('view', view);
+        localView[id]++;
+        store.save('view', localView);
+    },
+    getCountClick() {
+        const clickGraph = store.get(COUNT_RESULTS);
+        return clickGraph || [];
+    },
+    getCountViews() {
+        const viewGraph = store.get(VIEWS_RESULTS);
+        return viewGraph || [];
+    },
 };
 
 export default store;

@@ -8,6 +8,5 @@ QUnit.module('Three-Random');
 test('Generates three products', assert => {
     const productShuffle = new ProductShuffle(productData);
     const expected = productShuffle.getRandomProducts();
-    assert.equal(expected.length, 3);
-    assert.notDeepEqual(expected[0], expected[1]);
+    assert.ok(expected.id, true);
 });

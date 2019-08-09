@@ -1,4 +1,3 @@
-// import productsData from '../src/data/products.js';
 import renderProducts from '../src/render-products.js';
 
 const test = QUnit.test;
@@ -13,12 +12,9 @@ test('Render-product', assert => {
             image: 'assets/usb.gif'
         };
    
-
-    const expected = '<button><img class="image" src="assets/usb.gif"></button>';
-
+    const expected = '<button><img class="image" src="assets/usb.gif" alt="usb"></button>';
     const dom = renderProducts(products);
     const html = dom.outerHTML;
 
     assert.equal(html, expected);
-
 });

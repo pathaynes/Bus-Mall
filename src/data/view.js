@@ -1,4 +1,4 @@
-const count = {
+const view = {
     usb: 0,
     banana: 0, 
     bathroom: 0,
@@ -21,5 +21,4 @@ const count = {
     sweep: 0
 };
 
-export default count;
-
+export default view;
